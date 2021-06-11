@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/1280px-International_Pokémon_logo.svg.png" alt="Pokemon" id="logo">
+        <input type="text" placeholder="Search by Number" id="busqueda">
+        <button id="btn-buscar"><i class="fas fa-search"></i></button>
+    </header>
+    <div class="contenedor" id="conteneor">
+        <div class="top-btn">
+            <button id="btn-random"><i class="fas fa-sync-alt"></i>Random</button>
+            <select name="orden" id="orden">
+                <option value="ordenar">Order</option>              
+                <option value="inferior">Lower</option>
+                <option value="superior">Higher</option>
+                <!--
+                    <option value="A-Z">A-Z</option>
+                    <option value="Z-A">Z-A</option>
+                -->
+      
+            </select>
+        </div>
+        <div class="caracteres" id="contenedor">
+        </div>
+        <div class="paginas" id="paginas">
+            <button id="btnPrevPage" class="sig"><span id="pagPrev"></span></button>
+            <p>>></p>
+            <button id="btnActualPage" class="actual"><span id="pagActual"></span></button>
+            <p>>></p>
+            <button id="btnNextPage" class="sig"><span id="pagSiguiente"></span></button>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="codigo.js"></script>
+</body>
+
+</html>
