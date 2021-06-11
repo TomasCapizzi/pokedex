@@ -1,0 +1,2 @@
+# pokedex
+Pedex using PokeApi
